@@ -258,7 +258,7 @@ p {
   text-decoration: none;
   padding: 0.5rem 1.3rem;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-left: 1rem;
 }
 .nav-options a:hover {
@@ -599,7 +599,7 @@ footer {
   width: 47.5rem;
   height: 4.5rem;
   color: white;
-  padding: 1.5rem 20.7rem 0.2rem 20.7rem;
+  padding: 20%;
   font-size: 1.6rem;
   border-radius: 5px;
   background: #007AFF;
@@ -713,6 +713,24 @@ footer {
   letter-spacing: -0.1rem;
   padding-top: 5rem;
 }
+.pricing-sign-up-btn {
+  width: 47.5rem;
+  height: 4.5rem;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  background: #007aff;
+  margin-top: 2rem;
+  width: 100%;
+}
+.pricing-sign-up-btn:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #007aff;
+  color: #007aff;
+  background: rgba(0, 122, 255, 0.1);
+  cursor: pointer;
+}
 .pricing-box {
   display: flex;
   margin-top: 3rem;
@@ -725,7 +743,7 @@ footer {
   border: 1px solid #c4c4c4;
   min-width: 600px;
 }
-.pricing-box .feature-box {
+.feature-box {
   width: 25.5%;
   height: 500px;
   border: 1px solid red;
@@ -736,12 +754,12 @@ footer {
   font-size: 1.6rem;
   color: #999999;
 }
-.pricing-box .feature-box .feature-1 {
+.feature-box .feature-1 {
   width: 100%;
   height: 120px;
   border: 1px solid red;
 }
-.pricing-box .feature-box .feature-2 {
+.feature-box .feature-2 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
@@ -749,10 +767,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.pricing-box .feature-box .feature-2 .feature-2-text {
+.feature-box .feature-2 .feature-2-text {
   border: 1px solid red;
 }
-.pricing-box .feature-box .feature-3 {
+.feature-box .feature-3 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
@@ -760,10 +778,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.pricing-box .feature-box .feature-3 .feature-3-text {
+.feature-box .feature-3 .feature-3-text {
   border: 1px solid red;
 }
-.pricing-box .feature-box .feature-4 {
+.feature-box .feature-4 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
@@ -771,10 +789,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.pricing-box .feature-box .feature-4 .feature-4-text {
+.feature-box .feature-4 .feature-4-text {
   border: 1px solid red;
 }
-.pricing-box .feature-box .feature-5 {
+.feature-box .feature-5 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
@@ -782,10 +800,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.pricing-box .feature-box .feature-5 .feature-5-text {
+.feature-box .feature-5 .feature-5-text {
   border: 1px solid red;
 }
-.pricing-box .feature-box .feature-6 {
+.feature-box .feature-6 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
@@ -793,76 +811,114 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.pricing-box .feature-box .feature-6 .feature-6-text {
+.feature-box .feature-6 .feature-6-text {
   border: 1px solid red;
 }
-.pricing-box .free-box {
+.free-box {
   width: 37.5%;
   height: 120px;
   border: 1px solid red;
+  font-size: 1.6rem;
 }
-.pricing-box .free-box .free-1 {
+.free-box .free-1 {
   width: 100%;
   height: 120px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .free-box .free-2 {
+.free-box .free-2 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .free-box .free-3 {
+.free-box .free-3 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .free-box .free-4 {
+.free-box .free-4 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .free-box .free-5 {
+.free-box .free-5 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .free-box .free-6 {
+.free-box .free-6 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .paid-box {
+.paid-box {
   width: 37.5%;
   height: 120px;
   border: 1px solid red;
+  font-size: 1.6rem;
 }
-.pricing-box .paid-box .paid-1 {
+.paid-box .paid-1 {
   width: 100%;
   height: 120px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .paid-box .paid-2 {
+.paid-box .paid-2 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .paid-box .paid-3 {
+.paid-box .paid-3 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .paid-box .paid-4 {
+.paid-box .paid-4 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .paid-box .paid-5 {
+.paid-box .paid-5 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pricing-box .paid-box .paid-6 {
+.paid-box .paid-6 {
   width: 100%;
   height: 76px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
