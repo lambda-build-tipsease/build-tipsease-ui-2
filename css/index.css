@@ -357,7 +357,12 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro h2 {
-    margin-top: 2rem;
+    margin-top: 15rem;
+  }
+}
+@media (max-width: 720px) {
+  .home .intro h2 {
+    margin-top: 15rem;
   }
 }
 .home .intro p {
@@ -478,7 +483,6 @@ footer {
     width: 46rem;
     height: 7.2rem;
     color: white;
-    padding: 2.6rem 19.8rem;
   }
 }
 .home-sign-up-btn:hover {
@@ -567,14 +571,15 @@ footer {
   .box {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 16rem;
+    margin-top: 15rem;
     min-width: 490px;
   }
 }
 @media (max-width: 720px) {
   .box {
+    margin-left: 0;
     margin-right: 0;
-    margin-top: 16rem;
+    margin-top: 15rem;
   }
 }
 .box h1 {
@@ -666,6 +671,16 @@ footer {
   animation: fadein 1.5s;
   background: rgba(44, 44, 44, 0.9);
 }
+@media (max-width: 500px) {
+  .pricing-container {
+    margin-top: 15rem;
+  }
+}
+@media (max-width: 720px) {
+  .pricing-container {
+    margin-top: 15rem;
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -717,16 +732,6 @@ footer {
   padding-top: 5rem;
   color: white;
 }
-@media (max-width: 500px) {
-  .pricing-header {
-    margin-top: 16rem;
-  }
-}
-@media (max-width: 720px) {
-  .pricing-header {
-    margin-top: 16rem;
-  }
-}
 .pricing-sign-up-btn {
   width: 47.5rem;
   height: 4.5rem;
@@ -759,7 +764,7 @@ footer {
 }
 @media (max-width: 500px) {
   .pricing-box {
-    min-width: 490px;
+    width: 40%;
   }
 }
 @media (max-width: 720px) {
@@ -943,7 +948,7 @@ footer {
 }
 @media (max-width: 720px) {
   .about-box {
-    margin-top: 16rem;
+    margin-top: 15rem;
   }
 }
 .about-box .about-header {

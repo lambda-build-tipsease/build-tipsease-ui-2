@@ -13,6 +13,13 @@
   -o-animation: fadein 1.5s; /* Opera < 12.1 */
   animation: fadein 1.5s;
   background: rgba(44, 44, 44, 0.9);
+
+  @media @phone {
+    margin-top: 15rem;
+  }
+  @media @medium {
+    margin-top: 15rem;
+  }
 }
 
 @keyframes fadein {
@@ -71,12 +78,6 @@
   padding-top: 5rem;
   color: white;
 
-  @media @phone {
-    margin-top: 16rem;
-  }
-  @media @medium {
-    margin-top: 16rem;
-  }
 }
 
 .pricing-sign-up-btn {
@@ -107,7 +108,7 @@
   //box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1), 2px 0px 4px rgba(0, 0, 0, 0.1), 0px -2px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
 
   @media @phone {
-    min-width: 490px;
+    width: 40%;
 }
   @media @medium {
     min-width: 690px;
