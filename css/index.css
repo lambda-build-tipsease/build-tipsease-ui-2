@@ -238,12 +238,26 @@ p {
     margin-bottom: 0;
   }
 }
+@media (max-width: 720px) {
+  .navigation img {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 500px) {
   .navigation {
     margin-left: 0;
     width: 500px;
     display: flex;
     flex-direction: column;
+    height: 15rem;
+  }
+}
+@media (max-width: 720px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
     height: 15rem;
   }
 }
@@ -269,6 +283,11 @@ p {
   margin-left: 25%;
 }
 @media (max-width: 500px) {
+  .nav-options {
+    margin-left: 0;
+  }
+}
+@media (max-width: 720px) {
   .nav-options {
     margin-left: 0;
   }
@@ -539,6 +558,11 @@ footer {
   align-items: center;
   width: 100%;
   margin-top: 8.6%;
+}
+@media (max-width: 720px) {
+  .home .intro {
+    margin-top: 16rem;
+  }
 }
 .home .intro .home2-img {
   width: 90%;
