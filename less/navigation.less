@@ -16,11 +16,19 @@
     height: 2.3rem;
     width: 2.3rem;
     margin-bottom: 2rem;
+
+    @media @phone {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   @media @phone {
     margin-left: 0;
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
   }
 
   h1 {
@@ -29,6 +37,10 @@
     padding: 0.5rem;
     font-family: "Varela Round", sans-serif;
     color: white;
+
+    @media @phone {
+      margin-bottom: 1.6rem;
+    }
     
     a {
       text-decoration: none;
@@ -40,6 +52,10 @@
   font-size: 1.4rem;
   margin-bottom: 2rem;
   margin-left: 25%;
+
+  @media @phone {
+    margin-left: 0;
+  }
 
 
 
