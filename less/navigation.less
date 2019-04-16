@@ -16,11 +16,29 @@
     height: 2.3rem;
     width: 2.3rem;
     margin-bottom: 2rem;
+
+    @media @phone {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    @media @medium {
+      margin-bottom: 0;
+    }
   }
 
   @media @phone {
     margin-left: 0;
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+  }
+  @media @medium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    height: 15rem;
   }
 
   h1 {
@@ -29,6 +47,10 @@
     padding: 0.5rem;
     font-family: "Varela Round", sans-serif;
     color: white;
+
+    @media @phone {
+      margin-bottom: 1.6rem;
+    }
     
     a {
       text-decoration: none;
@@ -41,13 +63,20 @@
   margin-bottom: 2rem;
   margin-left: 25%;
 
+  @media @phone {
+    margin-left: 0;
+  }
+  @media @medium {
+    margin-left: 0;
+  }
+
 
 
   a {
     text-decoration: none;
     padding: 0.5rem 1.3rem;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-left: 1rem;
     
     &:hover {

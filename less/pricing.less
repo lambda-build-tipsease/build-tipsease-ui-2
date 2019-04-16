@@ -7,39 +7,60 @@
   margin: 0 auto;
   -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1.5s; /* Firefox < 16 */
-   -ms-animation: fadein 1.5s; /* Internet Explorer */
-    -o-animation: fadein 1.5s; /* Opera < 12.1 */
-       animation: fadein 1.5s;
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+
 }
 
 @keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
-}  
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .pricing-header {
   font-size: 3rem;
@@ -47,6 +68,28 @@ to   { opacity: 1; }
   color: #2c2c2c;
   letter-spacing: -0.1rem;
   padding-top: 5rem;
+
+  @media @phone {
+    margin-top: 16rem;
+  }
+  @media @medium {
+    margin-top: 16rem;
+  }
+}
+
+.pricing-sign-up-btn {
+  .button(47.5rem, 4.5rem, white);
+  font-size: 1.6rem;
+  border-radius: 5px;
+  background: #007aff;
+  margin-top: 2rem;
+  width: 100%;
+
+  &:hover {
+    .button-hover-border(1px, solid, #007aff);
+    .button-hover-style(#007aff, rgba(0, 122, 255, 0.1), pointer);
+  }
+
 }
 .pricing-box {
   display: flex;
@@ -60,152 +103,199 @@ to   { opacity: 1; }
   border: 1px solid #c4c4c4;
   min-width: 600px;
   //box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1), 2px 0px 4px rgba(0, 0, 0, 0.1), 0px -2px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
-  .feature-box {
-    width: 25.5%;
-    height: 500px;
-    border: 1px solid red; 
-    border-radius: 5px 0 0 5px; 
+
+  @media @phone {
+    min-width: 490px;
+}
+  @media @medium {
+    min-width: 690px;
+  }
+
+.feature-box {
+  width: 25.5%;
+  height: 497px;
+  //border: 1px solid red;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  font-size: 1.6rem;
+  color: #999999;
+
+  .feature-1 {
+    width: 100%;
+    height: 120px;
+    //border: 1px solid red;
+  }
+  .feature-2 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
     display: flex;
-    flex-direction: column;
-    background: #f8f8f8;
-    font-size: 1.6rem;
-    color: #999999;
+    justify-content: center;
+    align-items: center;
 
-    .feature-1 {
-        width: 100%;
-        height: 120px;
-        border: 1px solid red;
-
-      }
-      .feature-2 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-         
-        .feature-2-text {
-            border: 1px solid red;
-        }
-      }
-      .feature-3 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .feature-3-text {
-            border: 1px solid red;
-        }
-      }
-      .feature-4 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .feature-4-text {
-            border: 1px solid red;
-        }
-      }
-      .feature-5 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .feature-5-text {
-            border: 1px solid red;
-        }
-      }
-      .feature-6 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .feature-6-text {
-            border: 1px solid red;
-        }
-      }
+    //.feature-2-text {
+      //border: 1px solid red;
+    //}
+    }
   }
-  .free-box {
-    width: 37.5%;
-    height: 120px;
-    border: 1px solid red;
-    .free-1 {
-        width: 100%;
-        height: 120px;
-        border: 1px solid red;
-      }
-      .free-2 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .free-3 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .free-4 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .free-5 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .free-6 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
+  .feature-3 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //.feature-3-text {
+      //border: 1px solid red;
+    //}
   }
-  .paid-box {
-    width: 37.5%;
+  .feature-4 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //.feature-4-text {
+     // border: 1px solid red;
+    //}
+  }
+  .feature-5 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //.feature-5-text {
+      //border: 1px solid red;
+    //}
+  }
+  .feature-6 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //.feature-6-text {
+      //border: 1px solid red;
+    //}
+  }
+}
+
+.free-box {
+  width: 37.5%;
+  height: 120px;
+  //border: 1px solid red;
+  font-size: 1.6rem;
+  .free-1 {
+    width: 100%;
     height: 120px;
-    border: 1px solid red;
-    .paid-1 {
-        width: 100%;
-        height: 120px;
-        border: 1px solid red;
-      }
-      .paid-2 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .paid-3 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .paid-4 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .paid-5 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
-      .paid-6 {
-        width: 100%;
-        height: 76px;
-        border: 1px solid red;
-      }
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .free-2 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .free-3 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .free-4 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .free-5 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .free-6 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.paid-box {
+  width: 37.5%;
+  height: 120px;
+  //border: 1px solid red;
+  font-size: 1.6rem;
+  .paid-1 {
+    width: 100%;
+    height: 120px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paid-2 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paid-3 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paid-4 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paid-5 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paid-6 {
+    width: 100%;
+    height: 76px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
