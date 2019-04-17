@@ -44,6 +44,7 @@ const Chris = new Person ({
     'github': 'https://github.com/chrispetito'
 })
 
+//team array
 const team = [Sam, Alan, Tom, Vivek, Hugo, Chris];
 
 
@@ -71,7 +72,9 @@ for (let i = 0; i < team.length; i++) {
     }
 }
 
+
 //member images
+
 document.querySelectorAll('.member-img')[0].src = "img/samlandsman.png";
 
 document.querySelectorAll('.member-img')[1].src = "img/Tipsease favicon.png";
@@ -83,6 +86,11 @@ document.querySelectorAll('.member-img')[3].src = "img/14591865_1020564488280056
 document.querySelectorAll('.member-img')[4].src = "img/Tipsease favicon.png";
 
 document.querySelectorAll('.member-img')[5].src = "img/chrispetito.png";
+
+//view on github text
+for (let i = 0; i < github.length; i++){
+    github[i].innerHTML = 'View on Github';
+}
 
 
 //names
