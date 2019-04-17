@@ -410,7 +410,6 @@ footer {
 }
 .home .bottom-content {
   margin-top: 30px;
-  border-top: 1px solid #dee2e6;
   padding: 50px 5%;
   display: flex;
   justify-content: center;
@@ -508,6 +507,11 @@ footer {
   animation: fadein 1.5s;
   background: rgba(44, 44, 44, 0.9);
 }
+@media (max-width: 800px) {
+  .log-in-container {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .log-in-container {
     width: 100%;
@@ -572,6 +576,7 @@ footer {
 }
 @media (max-width: 800px) {
   .box {
+    margin-left: 21%;
     margin-top: 15rem;
   }
 }
@@ -964,7 +969,7 @@ footer {
   cursor: pointer;
   margin: 0 1rem;
   font-size: 1.6rem;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .tabs .tabs-link:hover {
   background: rgba(196, 196, 196, 0.2);

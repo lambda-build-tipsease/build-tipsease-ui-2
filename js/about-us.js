@@ -49,12 +49,13 @@ const team = [Sam, Alan, Tom, Vivek, Hugo, Chris];
 
 
 //names
-const member = document.querySelectorAll('.member-name');
+ const member = document.querySelectorAll('.member-name');
 for (let i = 0; i < team.length; i++) {
     for (let i = 0; i < member.length; i ++) {
         member[i].innerHTML = team[i].name;
     }
 }
+
 
 //titles
 const title = document.querySelectorAll('.member-title');
