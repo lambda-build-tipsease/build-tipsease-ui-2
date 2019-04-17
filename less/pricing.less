@@ -13,6 +13,16 @@
   -o-animation: fadein 1.5s; /* Opera < 12.1 */
   animation: fadein 1.5s;
   background: rgba(44, 44, 44, 0.9);
+
+  @media @medium {
+    margin-top: 15rem;
+    width: 100%;
+  }
+
+  @media @phone {
+    margin-top: 15rem;
+    width: 100%;
+  }
 }
 
 @keyframes fadein {
@@ -70,13 +80,6 @@
   letter-spacing: -0.1rem;
   padding-top: 5rem;
   color: white;
-
-  @media @phone {
-    margin-top: 16rem;
-  }
-  @media @medium {
-    margin-top: 16rem;
-  }
 }
 
 .pricing-sign-up-btn {
@@ -91,27 +94,7 @@
     .button-hover-border(1px, solid, #007aff);
     .button-hover-style(white, rgba(0, 122, 255, 0.7), pointer);
   }
-
 }
-.pricing-box {
-  display: flex;
-  margin-top: 3rem;
-  background-color: #2c2c2c;
-  height: 500px;
-  width: 70%;
-  margin-left: 14.5%;
-  margin-right: 14.5%;
-  border-radius: 5px;
-  border: 1px solid #c4c4c4;
-  min-width: 600px;
-  //box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1), 2px 0px 4px rgba(0, 0, 0, 0.1), 0px -2px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
-
-  @media @phone {
-    min-width: 490px;
-}
-  @media @medium {
-    min-width: 690px;
-  }
 
 .feature-box {
   width: 25.5%;
@@ -139,61 +122,74 @@
     align-items: center;
 
     //.feature-2-text {
-      //border: 1px solid red;
-    //}
-    }
-  }
-  .feature-3 {
-    width: 100%;
-    height: 76px;
     //border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-    //.feature-3-text {
-      //border: 1px solid red;
     //}
   }
-  .feature-4 {
-    width: 100%;
-    height: 76px;
-    //border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+}
+.feature-3 {
+  width: 100%;
+  height: 76px;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 
-    //.feature-4-text {
-     // border: 1px solid red;
-    //}
-  }
-  .feature-5 {
-    width: 100%;
-    height: 76px;
-    //border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  //.feature-3-text {
+  //border: 1px solid red;
+  //}
+}
+.feature-4 {
+  width: 100%;
+  height: 76px;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 
-    //.feature-5-text {
-      //border: 1px solid red;
-    //}
-  }
-  .feature-6 {
-    width: 100%;
-    height: 76px;
-    //border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  //.feature-4-text {
+  // border: 1px solid red;
+  //}
+}
+.feature-5 {
+  width: 100%;
+  height: 76px;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 
-    //.feature-6-text {
-      //border: 1px solid red;
-    //}
+  //.feature-5-text {
+  //border: 1px solid red;
+  //}
+}
+.feature-6 {
+  width: 100%;
+  height: 76px;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  //.feature-6-text {
+  //border: 1px solid red;
+  //}
+}
+.pricing-box {
+  display: flex;
+  background-color: #2c2c2c;
+  height: 500px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  min-width: 500px;
+  //box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1), 2px 0px 4px rgba(0, 0, 0, 0.1), 0px -2px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media @phone {
+    width: 100%;
   }
 }
 
@@ -264,7 +260,7 @@
   height: 120px;
   //border: 1px solid red;
   font-size: 1.6rem;
-  
+
   .paid-1 {
     width: 100%;
     height: 120px;
@@ -319,5 +315,54 @@
     justify-content: center;
     align-items: center;
     color: white;
+  }
+}
+.tabs {
+  width: 100%;
+  @media @phone {
+    width: 100%;
+  }
+  .tabs-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .tabs-item {
+    display: none;
+    width: 100%;
+  }
+  .tabs-item-selected {
+    display: block;
+  }
+  .tabs-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin: 2rem 1rem 0 1rem;
+  }
+  .tabs-link {
+    padding: 0.8rem 2rem 0.7rem 2rem;
+    font-size: 24px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    border-radius: 20px;
+
+    &:hover {
+      background: rgba(196, 196, 196, 0.2);
+      border: 0.5px solid #c4c4c4;
+    }
+  }
+  .tabs-link-selected {
+    border: 0.5px solid #c4c4c4;
+    background: rgba(196, 196, 196, 0.5);
+    color: white;
+
+    &:hover {
+      background-color: none;
+    }
   }
 }
