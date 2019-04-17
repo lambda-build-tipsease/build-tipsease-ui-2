@@ -567,19 +567,18 @@ footer {
   min-width: 480px;
   padding-top: 15rem;
 }
+@media (max-width: 800px) {
+  .box {
+    margin-left: 14%;
+    margin-top: 15rem;
+  }
+}
 @media (max-width: 500px) {
   .box {
     margin-left: 0;
     margin-right: 0;
     margin-top: 15rem;
-    min-width: 490px;
-  }
-}
-@media (max-width: 800px) {
-  .box {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 15rem;
+    min-width: 50%;
   }
 }
 .box h1 {
@@ -608,7 +607,7 @@ footer {
 }
 .box .log-in-button {
   color: white;
-  background: #007AFF;
+  background: #007aff;
   margin-top: 2rem;
   cursor: pointer;
   height: 4rem;
@@ -621,14 +620,14 @@ footer {
   background: rgba(2, 122, 255, 0.8);
 }
 .box .sign-up-button {
-  color: #007AFF;
+  color: #007aff;
   height: 4rem;
   width: 70%;
   background: rgba(2, 122, 255, 0.05);
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.5rem;
-  border: 0.5px solid #007AFF;
+  border: 0.5px solid #007aff;
 }
 .box .sign-up-button:hover {
   background: rgba(2, 122, 255, 0.15);
@@ -762,14 +761,15 @@ footer {
   border: 1px solid #c4c4c4;
   min-width: 600px;
 }
-@media (max-width: 500px) {
-  .pricing-box {
-    width: 40%;
-  }
-}
 @media (max-width: 800px) {
   .pricing-box {
-    min-width: 690px;
+    min-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .pricing-box {
+    width: 20%;
+    min-width: 100%;
   }
 }
 .pricing-box .feature-box {
