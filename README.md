@@ -1,7 +1,7 @@
 # Build Week 1 - April 15, 2019 - Tipsease
 Deployed At: https://eloquent-lewin-bbf0d3.netlify.com/home2.html#
 
-##Tipsease - What We Built
+## Tipsease - What We Built
 Tipsease is a way for customers to tip service employees directly to ensure that the employee receives the full tip without any employer interference. The possible allure to businesses is that the tip is something that could be handled separately from their core business by a third party (Tipsease).
 
 ## Tipsease Marketing Page
