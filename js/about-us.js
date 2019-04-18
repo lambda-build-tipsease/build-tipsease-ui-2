@@ -49,12 +49,13 @@ const team = [Sam, Alan, Tom, Vivek, Hugo, Chris];
 
 
 //names
-const member = document.querySelectorAll('.member-name');
+ const member = document.querySelectorAll('.member-name');
 for (let i = 0; i < team.length; i++) {
     for (let i = 0; i < member.length; i ++) {
         member[i].innerHTML = team[i].name;
     }
 }
+
 
 //titles
 const title = document.querySelectorAll('.member-title');
@@ -88,10 +89,12 @@ document.querySelectorAll('.member-img')[4].src = "img/Tipsease favicon.png";
 document.querySelectorAll('.member-img')[5].src = "img/chrispetito.png";
 
 //view on github text
-for (let i = 0; i < github.length; i++){
-    github[i].innerHTML = 'View on Github';
-}
-
+// for (let i = 0; i < github.length; i++){
+//     github[i].innerHTML = 'View on Github';
+// }
+github.forEach(function(handle) {
+    handle.innerHTML = 'View on Github';
+})
 
 //names
 

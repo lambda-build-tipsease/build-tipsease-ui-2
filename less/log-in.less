@@ -1,6 +1,7 @@
 .log-in-container {
   background: rgba(44, 44, 44, 0.9);
   width: 1024px;
+  height: 850px;
   margin: 0 auto;
   -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1.5s; /* Firefox < 16 */
@@ -8,6 +9,10 @@
   -o-animation: fadein 1.5s; /* Opera < 12.1 */
   animation: fadein 1.5s;
   background: rgba(44, 44, 44, 0.9);
+
+  @media @medium {
+    width: 100%;
+  }
 
   @media @phone {
     width: 100%;
@@ -69,7 +74,7 @@
   margin-top: 5rem;
   align-items: center;
   background-color: #2c2c2c;
-  height: 800px;
+  height: 850px;
   width: 50%;
   margin-left: 24.5%;
   margin-right: 24.5%;
@@ -78,6 +83,7 @@
   //box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1), 2px 0px 4px rgba(0, 0, 0, 0.1), 0px -2px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
 
   @media @medium {
+    margin-left: 21%;
     margin-top: 15rem;
   }
 
@@ -119,7 +125,7 @@
     margin-top: 2rem;
     cursor: pointer;
     height: 4rem;
-    width: 300px;
+    width: 360px;
     border-radius: 5px;
     font-size: 1.5rem;
     border: none;
