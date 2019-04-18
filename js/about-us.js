@@ -89,10 +89,12 @@ document.querySelectorAll('.member-img')[4].src = "img/Tipsease favicon.png";
 document.querySelectorAll('.member-img')[5].src = "img/chrispetito.png";
 
 //view on github text
-for (let i = 0; i < github.length; i++){
-    github[i].innerHTML = 'View on Github';
-}
-
+// for (let i = 0; i < github.length; i++){
+//     github[i].innerHTML = 'View on Github';
+// }
+github.forEach(function(handle) {
+    handle.innerHTML = 'View on Github';
+})
 
 //names
 
