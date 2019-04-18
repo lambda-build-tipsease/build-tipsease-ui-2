@@ -819,7 +819,6 @@ footer {
   height: 500px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #c4c4c4;
   min-width: 500px;
 }
 @media (max-width: 500px) {
@@ -974,10 +973,8 @@ footer {
 }
 .tabs .tabs-link:hover {
   background: rgba(196, 196, 196, 0.2);
-  border: 0.5px solid #c4c4c4;
 }
 .tabs .tabs-link-selected {
-  border: 0.5px solid #c4c4c4;
   background: rgba(196, 196, 196, 0.5);
   color: white;
 }
