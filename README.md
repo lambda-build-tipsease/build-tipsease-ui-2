@@ -17,11 +17,11 @@ The **Home Page** is the elevator pitch to both customers and businesses. It exp
 ### About Us
 The **About Us** page consists of a list of team members, a photo of each team member, each team member name, and each team member role on the Tipsease project. It also includes a link to each member GitHub profile.
 
-###Pricing 
+### Pricing 
 The **Pricing** page is a mock pricing page that includes what the Tipsease product might be priced for. It includes a column for both customers and merchants, and list of product features, and the corresponding cost for each feature.
 
-###Log In/Sign Up
+### Log In/Sign Up
 The **Log In/Sign Up** page consists of a mock password and email field, as well as three buttons: a Log In button, a Sign Up button, and a Explore Pricing button. The Log In and Sign Up buttons link to the react app, and Explore Pricing button links to the Pricing page.
 
-###Mobile and Tablet Views
+### Mobile and Tablet Views
 All four pages have been formatted to be responsive to both mobile (500px) and tablet (800px) views, in addition to desktop (>1000px).
