@@ -98,6 +98,11 @@ for (let i = 0; i < freeBoxItems.length; i++) {
     freeBoxItems[i].style.color = "#4f4f4f";
   }
 }
+for (let i = 0; i < freeBoxItems.length; i++) {
+    if (freeBoxItems[i].textContent === "$0") {
+      freeBoxItems[i].style.color = "#5DD39E";
+    }
+  }
 
 let paidBoxItems = document.querySelectorAll(".paid-box div");
 
@@ -106,3 +111,9 @@ for (let i = 0; i < paidBoxItems.length; i++) {
     paidBoxItems[i].style.color = "#00A8E8";
   }
 }
+
+for (let i = 0; i < paidBoxItems.length; i++) {
+    if (paidBoxItems[i].textContent === "$0") {
+      paidBoxItems[i].style.color = "#5DD39E";
+    }
+  }
